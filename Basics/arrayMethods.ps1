@@ -19,8 +19,8 @@ $fruit_array_list.GetRange(0,2)
 $fruit_array_list.Contains("Banana") # Checking existance of an element in an array
 $fruit_array_list.Count# List length
 $fruit_array | Out-File ./fruits.txt # print the array elements to a file
-$fruit_array = $null
-$fruit_array -eq $null
+$fruit_array = $null #clearing an array varable
+
 
 
 
