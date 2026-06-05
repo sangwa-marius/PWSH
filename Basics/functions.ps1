@@ -67,6 +67,7 @@ function Invoke-AddTwoNumbers{
         [int]$num2
     )
 
+
     Write-Verbose "You passed the following arguments"
     Write-Verbose ("="*50)
     Write-Verbose "First number: $num1"
@@ -75,8 +76,8 @@ function Invoke-AddTwoNumbers{
     Return $num1 + $num2
 }
 
-$add = Invoke-AddTwoNumbers 4 65 -Verbose
-$add 
+$add = Invoke-AddTwoNumbers 4 65
+$add
 
 
 
