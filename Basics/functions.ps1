@@ -14,7 +14,7 @@ function Invoke-PrintRange($range) {
     }
 }
 
-Invoke-PrintRange -12
+Invoke-PrintRange 12
 
 
 # Advanced function
