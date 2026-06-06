@@ -1,16 +1,11 @@
 <#
-This dumps all variables, functions, aliases... in this file
+This dumps all variables, functions, aliases... in this file no private helpers , 
+every thing is public to the current terminal session.
 And the $PSScriptRoot helps to use the resolved path from the home
 #>
 . "$PSScriptRoot/fetch.ps1" 
 
-
-function Invoke-CallAll{
-  $UserDetails =  Invoke-FetchUser "/home/marius/pwsh/Basics/DotSorcing/data.csv"
-  Invoke-ExtractEmail $UserDetails
-}
-
-Invoke-CallAll
+Invoke-FetchAndPrintUser "$PSScriptRoot/data.csv" # Notice this function is from fetch.ps1
 
 <#
 Executing this script manually, (./print.ps1) creates 

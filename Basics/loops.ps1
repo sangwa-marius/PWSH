@@ -34,6 +34,8 @@ Do {
     Write-Output($num)
 }while ($num -le 10)
 
+
+# do-until loop
 $num = 0
 do {
     Write-Output($num)
