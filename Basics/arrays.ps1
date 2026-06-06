@@ -31,5 +31,13 @@ foreach($arr in $mdarr){
 }
 
 
+function add_any($numbers){
+    $square_array=@()
+    foreach($number in $numbers){
+       $square_array += $number*$number
+    }
+    Write-Output($square_array)
+}
 
+add_any 4 ,5 ,6 
 
