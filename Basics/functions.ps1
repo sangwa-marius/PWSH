@@ -4,7 +4,7 @@
 # Basic function
 function Invoke-PrintRange($range) {
     if ($range -notmatch "^\d+$") {
-        Write-Error("The argument to this fuction should be a positive interger") -Verbose
+        Write-Output("The argument to this fuction should be a positive interger") 
         break
     }
     $num = 0
@@ -14,7 +14,7 @@ function Invoke-PrintRange($range) {
     }
 }
 
-Invoke-PrintRange 12
+Invoke-PrintRange -12
 
 
 # Advanced function

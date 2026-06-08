@@ -19,6 +19,7 @@ $Global:Marius = 'This is a global variable' # Global variable declaration
  Get-ChildItem variable:* # Get all variables
  #Set variable
  $setVariable = 'set'
+ $setVariable
 
  #Print variable
  $print = 'print'
@@ -36,11 +37,11 @@ $Global:Marius = 'This is a global variable' # Global variable declaration
  # Write to  a file
 
  Write-Output "Hello , My anme is SANGWA Marius , and I'm studying powershell, a very good scriptiong language." | Out-File ./marius.txt # writing to a text file
- Get-Process | select id ,ProcessName | Export-Csv $home/pwsh/proc.csv # writing to a csv file
+ Get-Process | Select-Object id ,ProcessName | Export-Csv $home/pwsh/proc.csv # writing to a csv file
 
  #Read file contents to a variable
 
- $fileInfo = Get-Content $home/pwsh/proc.csv
+ $fileInfo = Import-Csv $home/pwsh/proc.csv
  $fileInfo
 
 
